@@ -1,0 +1,1 @@
+deepspeed --num_gpus 1 run_mlm.py --model_name_or_path bert-base-uncased --tokenizer_name ./data/vocab.txt --train_file ./data/LineText_for_BERT.txt --per_device_train_batch_size 16 --do_train --output_dir ./tmp/test-mlm --line_by_line True --save_steps 10000 --num_train_epochs 10
